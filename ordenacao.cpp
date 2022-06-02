@@ -29,8 +29,8 @@ float tempo(clock_t tempo);
 */
 int main()
 {
-    int vSize = 100;
-    int vIncrement = 100;
+    int vSize = 10;
+    int vIncrement = 10;
     int tentativa = 5; 
     clock_t dB[tentativa], dQ[tentativa], dM[tentativa], dS[tentativa], dI[tentativa], dShell[tentativa], dBS[tentativa], dG[tentativa];
     int *v = (int*)malloc(vSize*sizeof(int));
@@ -48,46 +48,46 @@ int main()
             dB[i] = clock() - dB[i]; 
     
             //QuickSort
-            x = lerDados(v[j]);
+           /* x = lerDados(v[j]);
             dQ[i] = clock();
             quicksort(x, 0, v[j]);
-            dQ[i] = clock() - dQ[i];
+            dQ[i] = clock() - dQ[i]; */
 
             //MergeSort
-            x = lerDados(v[j]);
+           /* x = lerDados(v[j]);
             dM[i] = clock();
             mergeSort(x, 0, v[j], v[j]);
-            dM[i] = clock() - dM[i];
+            dM[i] = clock() - dM[i]; */
 
             //SelectionSort
-            x = lerDados(v[j]);
+          /*  x = lerDados(v[j]);
             dS[i] = clock();
             selectionSort(x, v[j]);
-            dS[i] = clock() - dS[i];
+            dS[i] = clock() - dS[i]; */
 
             //InsertionSort
-            x = lerDados(v[j]);
+           /* x = lerDados(v[j]);
             dI[i] = clock();
             insertionSort(x, v[j]);
-            dI[i] = clock() - dI[i];
+            dI[i] = clock() - dI[i]; */
 
             //ShellSort
-            x = lerDados(v[j]);
+          /*  x = lerDados(v[j]);
             dShell[i] = clock();
             insertionSort(x, v[j]);
-            dShell[i] = clock() - dShell[i];
+            dShell[i] = clock() - dShell[i]; */
 
             //BinaryInsertionSort
-            x = lerDados(v[j]);
+           /* x = lerDados(v[j]);
             dBS[i] = clock();
             binaryInsertionSort(x, v[j]);
-            dBS[i] = clock() - dBS[i];
+            dBS[i] = clock() - dBS[i]; */
 
             //BogoSort
-            x = lerDados(v[j]);
+           /* x = lerDados(v[j]);
             dG[i] = clock();
             binaryInsertionSort(x, v[j]);
-            dG[i] = clock() - dG[i];
+            dG[i] = clock() - dG[i]; */
 
 
             
